@@ -1,0 +1,182 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="row" style="margin-top: 1%">
+  {% if pagina == 'alugados' %}
+  <div class="col-md-8 imv-title" style="padding-top: 1%; padding-right: 0%">
+    Imóveis Alugados
+  </div>
+  {% else %}
+  <div class="col-md-8 imv-title" style="padding-top: 1%; padding-right: 0%">
+    Imóveis Disponiveis
+  </div>
+  <div
+    class="col-md-4 imv-add"
+    style="padding-top: 1.2%; padding-left: 0%; color: green; text-decoration: none; color: inherit;"
+  >
+    <a href="#">
+      <i class="bi-plus" style="font-size: 300%"></i>
+    </a>
+  </div>
+  {% endif %}
+  <div class="col-md-5 card-imovel-left">
+    <div class="">Imóvel 1</div>
+    <div class="row">
+      <div class="col-md-auto img-house">
+        <a href="{% url 'info-imovel' %}">
+          <img
+            src="{% static 'img/house.png' %}"
+            alt=""
+            style="width: 160px; height: 160px"
+          />
+        </a>
+      </div>
+      <div class="col-md-auto description-house">
+        Endereço: aaaa
+        <br />
+        Valor Aluguel: 300 R$
+        <br />
+        {% if pagina == 'alugados' %} Situação: Alugado {% else %} Situação:
+        Disponivel {% endif %}
+        <br />
+        Qt cômodos: 5
+        <br />
+        Nome Locatário: Caravalho {% if pagina == 'alugados' %}
+        <br />
+        Vencimento: 12 dias {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5 card-imovel-right">
+    <div class="">Imóvel 2</div>
+    <div class="row">
+      <div class="col-md-auto img-house">
+        <a href="{% url 'info-imovel' %}">
+          <img
+            src="{% static 'img/house.png' %}"
+            alt=""
+            style="width: 160px; height: 160px"
+          />
+        </a>
+      </div>
+      <div class="col-md-auto description-house">
+        Endereço: aaaa
+        <br />
+        Valor Aluguel: 300 R$
+        <br />
+        Situação: Disponivel
+        <br />
+        Qt cômodos: 5
+        <br />
+        Nome Locatário: Caravalho {% if pagina == 'alugados' %}
+        <br />
+        Vencimento: 12 dias {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5 card-imovel-left">
+    <div class="">Imóvel 3</div>
+    <div class="row">
+      <div class="col-md-auto img-house">
+        <a href="{% url 'info-imovel' %}">
+          <img
+            src="{% static 'img/house.png' %}"
+            alt=""
+            style="width: 160px; height: 160px"
+          />
+        </a>
+      </div>
+      <div class="col-md-auto description-house">
+        Endereço: aaaa
+        <br />
+        Valor Aluguel: 300 R$
+        <br />
+        Situação: Disponivel
+        <br />
+        Qt cômodos: 5
+        <br />
+        Nome Locatário: Caravalho {% if pagina == 'alugados' %}
+        <br />
+        Vencimento: 12 dias {% endif %}
+      </div>
+    </div>
+  </div>
+  {% if pagina == 'disponiveis' %}
+  <div class="col-md-5 card-imovel-right">
+    <div class="">Imóvel 4</div>
+    <div class="row">
+      <div class="col-md-auto img-house">
+        <a href="{% url 'info-imovel' %}">
+          <img
+            src="{% static 'img/house.png' %}"
+            alt=""
+            style="width: 160px; height: 160px"
+          />
+        </a>
+      </div>
+      <div class="col-md-auto description-house">
+        Endereço: aaaa
+        <br />
+        Valor Aluguel: 300 R$
+        <br />
+        Situação: Disponivel
+        <br />
+        Qt cômodos: 5
+        <br />
+        Nome Locatário: Caravalho {% if pagina == 'alugados' %}
+        <br />
+        Vencimento: 12 dias {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5 card-imovel-left">
+    <div class="">Imóvel 5</div>
+    <div class="row">
+      <div class="col-md-auto img-house">
+        <a href="{% url 'info-imovel' %}">
+          <img
+            src="{% static 'img/house.png' %}"
+            alt=""
+            style="width: 160px; height: 160px"
+          />
+        </a>
+      </div>
+      <div class="col-md-auto description-house">
+        Endereço: aaaa
+        <br />
+        Valor Aluguel: 300 R$
+        <br />
+        Situação: Disponivel
+        <br />
+        Qt cômodos: 5
+        <br />
+        Nome Locatário: Caravalho
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5 card-imovel-right">
+    <div class="">Imóvel 6</div>
+    <div class="row">
+      <div class="col-md-auto img-house">
+        <a href="{% url 'info-imovel' %}">
+          <img
+            src="{% static 'img/house.png' %}"
+            alt=""
+            style="width: 160px; height: 160px"
+          />
+        </a>
+      </div>
+      <div class="col-md-auto description-house">
+        Endereço: aaaa
+        <br />
+        Valor Aluguel: 300 R$
+        <br />
+        Situação: Disponivel
+        <br />
+        Qt cômodos: 5
+        <br />
+        Nome Locatário: Caravalho
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endblock content %}

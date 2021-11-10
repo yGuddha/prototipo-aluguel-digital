@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="{% static 'css/styles-ours.css' %}" rel="stylesheet" />
+    <link
+      href="{% static 'external/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <title>Digital Rent</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <div class="container">
+        <div class="form row" style="margin-top: 5%">
+          <div class="form-group col-md-6">
+            <label for="inputNome4">Nome</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputNome4"
+              placeholder="Nome"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputSobrenome4">Sobrenome</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputSobrenome4"
+              placeholder="Sobrenome"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword4"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCpf4">CPF</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputCpf4"
+              placeholder="CPF"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputTelefone4">Telefone</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputTelefone4"
+              placeholder="Telefone"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEndereco">Endereco</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputEndereco"
+            placeholder="1234 Main St"
+          />
+        </div>
+        <div class="form row">
+          <div class="form-group col-md-6">
+            <label for="inputCidade">Cidade</label>
+            <input type="text" class="form-control" id="inputCidade" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputEstado">Estado</label>
+            <select id="inputEstado" class="form-control">
+              <option selected>Selecione...</option>
+              <option>PR</option>
+              <option>RS</option>
+              <option>SC</option>
+              <option>SP</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputCep">CEP</label>
+            <input type="text" class="form-control" id="inputCep" />
+          </div>
+        </div>
+        <div class="form-group row" style="margin-top: 1%; margin-bottom: 1%">
+          <div class="form-check col-md-2" style="padding-left: 3.2%">
+            <input class="form-check-input" type="checkbox" id="gridLocador" />
+            <label class="form-check-label" for="gridLocador"> Locador </label>
+          </div>
+          <div class="form-check col-md-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="gridLocatario"
+            />
+            <label class="form-check-label" for="gridLocatario">
+              Locatário
+            </label>
+          </div>
+        </div>
+        <div>
+          <a href="{%url 'login'%}">
+            <button class="btn btn-primary">Finalizar</button>
+          </a>
+        </div>
+      </div>
+    </main>
+    {% include 'part-footer.html' %}
+    <script src="{% static 'external/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="col-md-12" style="text-align: center">Informações do Aluguel</div>
+<div class="col-md-12" style="text-align: center">Vencimento:12 dias</div>
+
+<div class="row mb-3 row-info" style="padding-top: 3%">
+  <label
+    for="endereco"
+    class="col-sm-4 col-form-label col-form-label-sm info-aluguel-label"
+    >Endereco</label
+  >
+  <div class="col-sm-4">
+    <input
+      type="adress"
+      class="form-control form-control-sm"
+      id="endereco"
+      placeholder="Rua Jabuti, 859, centro - Cascavel"
+      disabled
+    />
+  </div>
+</div>
+
+<div class="row mb-3 row-info">
+  <label
+    for="rent-value"
+    class="col-sm-4 col-form-label col-form-label-sm info-aluguel-label"
+    >Valor aluguel</label
+  >
+  <div class="col-sm-4">
+    <input
+      type="value"
+      class="form-control form-control-sm"
+      id="rent-value"
+      placeholder="800,00"
+      disabled
+    />
+  </div>
+</div>
+
+<div class="row mb-3 row-info">
+  <label
+    for="locador"
+    class="col-sm-4 col-form-label col-form-label-sm info-aluguel-label"
+    >Locador</label
+  >
+  <div class="col-sm-4">
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      id="locador"
+      placeholder="Fulano da Silva"
+      disabled
+    />
+  </div>
+</div>
+
+<div class="row mb-3 row-info">
+  <label
+    for="telefone"
+    class="col-sm-4 col-form-label col-form-label-sm info-aluguel-label"
+    >Tel. Locador</label
+  >
+  <div class="col-sm-4">
+    <input
+      type="phone"
+      class="form-control form-control-sm"
+      id="telefone"
+      placeholder="45 999999999"
+      disabled
+    />
+  </div>
+</div>
+
+<div class="row mb-3 row-info">
+  <label
+    for="colFormLabelSm"
+    class="col-sm-4 col-form-label col-form-label-sm info-aluguel-label"
+    >Email</label
+  >
+  <div class="col-sm-4">
+    <input
+      type="email"
+      class="form-control form-control-sm"
+      id="colFormLabelSm"
+      placeholder="nome@gmail.com"
+      disabled
+    />
+  </div>
+</div>
+
+<div class="row mb-3 row-info">
+  <label
+    for="payment"
+    class="col-sm-4 col-form-label col-form-label-sm info-aluguel-label"
+    >Pagamento</label
+  >
+  <div class="col-sm-4">
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      id="payment"
+      placeholder="Dinheiro"
+      disabled
+    />
+  </div>
+</div>
+
+<div class="row mb-3 row-info">
+  <label
+    for="vencimento"
+    class="col-sm-4 col-form-label col-form-label-sm info-aluguel-label"
+    >Vencimento</label
+  >
+  <div class="col-sm-4">
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      id="vencimento"
+      placeholder="Dia 01"
+      disabled
+    />
+  </div>
+</div>
+
+{% endblock content %}

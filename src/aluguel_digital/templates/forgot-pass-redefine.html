@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="{% static 'css/styles-ours.css' %}" rel="stylesheet" />
+    <link
+      href="{% static 'external/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <title>Digital Rent</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <div class="container">
+        <div class="idx-title">Redefinir Senha</div>
+        <form class="row idx-form">
+          <div class="col-md-12 idx-box-input" style="padding-top: 1%">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Senha"
+              name="username"
+              id="username"
+              required
+            />
+          </div>
+          <div class="col-md-12 idx-box-input" style="padding-top: 1%">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Confirmar senha"
+              name="username"
+              id="username"
+              required
+            />
+          </div>
+        </form>
+        <div class="row idx-form" style="padding-top: 0%">
+          <div class="col-md-12 idx-box-btn">
+            <a href="{% url 'login' %}">
+              <button class="btn btn-primary idx-signin-btn" type="submit">
+                Confirmar
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    {% include 'part-footer.html' %}
+    <script src="{% static 'external/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  </body>
+</html>

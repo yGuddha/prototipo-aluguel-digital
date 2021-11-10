@@ -1,0 +1,66 @@
+main{
+    display: block;
+}
+
+.flex-shrink-0{
+    flex-shrink: 0 !important;
+}
+
+.idx-title{
+    text-align: center; 
+    color:black;
+    padding-top: 5%;
+    font-size: 300%;
+    font-weight: 500;
+}
+
+.idx-forgot-pass{
+    padding-top: 1%;
+    font-size: 12px;
+    text-align: right;
+}
+
+.idx-form{
+    padding: 4% 35% 0% 35%;
+}
+
+.idx-box-btn{
+    padding-top: 2%;
+}
+
+.idx-signin-btn{
+    float: right;
+}
+
+.home-menu-text{
+    color:black !important;
+    padding-bottom: 0;
+}
+
+.info-aluguel-label{
+    text-align: right;
+}
+
+.card-imovel-left{
+    border: 1px solid black;
+    margin-top: 2% !important;
+    margin-left: 7%;
+}
+
+.card-imovel-right{
+    border: 1px solid black;
+    margin-top: 2% !important;
+    margin-left: 2%;
+}
+
+.profile-btn-box{
+    padding-top: 2%;
+}
+
+.imv-title{
+    text-align: right; 
+    color:black;
+    padding-top: 5%;
+    font-size: 300%;
+    font-weight: 500;
+}
